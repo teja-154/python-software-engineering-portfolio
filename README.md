@@ -173,17 +173,16 @@ uvicorn task13_api:app --reload
 
 ---
 
-## 🎯 Career Goals
+## 🎯 Learning Roadmap & Next Steps
 
-**Target Role**: Python Backend Software Engineer / Data Operations Engineer
-**Goal Salary**: Above-average PPA (Package Per Annum)
-**Timeline**: Complete by campus placement drives
-**Next Steps**:
-1. Push this repository to GitHub
-2. Add automated tests (`pytest`)
-3. Containerize the API with Docker
-4. Add authentication (JWT/OAuth2)
-5. Explore PostgreSQL migration
+This portfolio represents my dedicated, day-by-day effort to master software engineering from first principles. Having successfully built everything from core filesystem automation to a database-backed REST API, here is the technical roadmap I am actively working on next to prepare for upcoming campus placement drives:
+
+1. **Automated Testing (`pytest`)**: Designing unit tests for API endpoints to ensure no new commits introduce bugs.
+2. **Containerization (Docker)**: Packaging this FastAPI application into a Docker container to ensure seamless deployment anywhere.
+3. **API Security (JWT / OAuth2)**: Implementing user authentication and secure token verification for endpoints.
+4. **Production Databases (PostgreSQL)**: Transitioning from local SQLite files to a multi-container PostgreSQL database setup.
+
+My focus is on writing clean, readable, and highly defensive Python code that handles real-world failures gracefully.
 
 ---
 
