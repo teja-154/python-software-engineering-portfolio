@@ -49,67 +49,67 @@ TASKS-PORTFOLIO/
 
 ## 📝 Task Index & Descriptions
 
-### **Task 1: The Personal Developer Log Book** (`task1_logger1.py`)
+### **Task 1: The Personal Developer Log Book** ([`task1_logger1.py`](tasks/task1_logger1.py))
 - **Category**: File I/O, Timestamps, String Formatting
 - **What it does**: Logs daily coding activities (what you learned, focus level) to a text file with automatic timestamps.
 - **Key concepts**: `datetime.now()`, file append mode (`'a'`), formatted strings.
 
-### **Task 2: The Automated File Sorter & Cleaner** (`task2_sorter.py`)
+### **Task 2: The Automated File Sorter & Cleaner** ([`task2_sorter.py`](tasks/task2_sorter.py))
 - **Category**: Directory Traversal, File Management
 - **What it does**: Automatically sorts files in a directory into subfolders (`Scripts`, `Notes`, `Misc`) based on file extension.
 - **Key concepts**: `os.listdir()`, `os.path.isfile()`, `shutil.move()`, `os.makedirs()`.
 
-### **Task 3: The CLI Data Greeter & JSON Config Loader** (`task3_greeter.py`)
+### **Task 3: The CLI Data Greeter & JSON Config Loader** ([`task3_greeter.py`](tasks/task3_greeter.py))
 - **Category**: JSON File Handling, Command-Line Arguments
 - **What it does**: Reads a `config.json` file and greets the user differently based on command-line arguments and configuration settings.
 - **Key concepts**: `json.load()`, `sys.argv`, `try...except FileNotFoundError`, conditional logic.
 
-### **Task 4: File Analyzer and Reporter** (`task4_analyser.py`)
+### **Task 4: File Analyzer and Reporter** ([`task4_analyser.py`](tasks/task4_analyser.py))
 - **Category**: Filesystem Auditing, `pathlib`, Report Generation
 - **What it does**: Analyzes a directory, lists all files with sizes, calculates total directory size, and exports a summary report to `report.txt`.
 - **Key concepts**: `pathlib.Path`, `.is_file()`, `.stat().st_size`, file writing.
 
-### **Task 5: Log File Parser and Metrics Calculator** (`task5_parser.py`)
+### **Task 5: Log File Parser and Metrics Calculator** ([`task5_parser.py`](tasks/task5_parser.py))
 - **Category**: Streaming Data Processing, Error Handling
 - **What it does**: Parses a log file line by line, counts ERROR and WARNING entries, handles missing files gracefully, and auto-creates empty log files.
 - **Key concepts**: `for line in file` (memory-efficient reading), `in` operator, `Path.touch()`, `try...except FileNotFoundError`.
 
-### **Task 6: CLI Todo Item Manager (JSON Persistence)** (`task6_todo.py`)
+### **Task 6: CLI Todo Item Manager (JSON Persistence)** ([`task6_todo.py`](tasks/task6_todo.py))
 - **Category**: CRUD Operations, JSON State Management
 - **What it does**: Full-featured command-line todo list with Add, List, and Mark-as-Done functionality. All data persists in `todos.json`.
 - **Key concepts**: `json.load()` / `json.dump()`, `try...except (FileNotFoundError, json.JSONDecodeError)`, `sys.argv` routing.
 
-### **Task 7: Employee Database & Salary Analytics** (`task7_employee.py`)
+### **Task 7: Employee Database & Salary Analytics** ([`task7_employee.py`](tasks/task7_employee.py))
 - **Category**: Relational Data Structures, Aggregation, Frequency Counters
 - **What it does**: Manages an employee database with Add, List, and Stats commands. Calculates average salary and counts employees per department.
 - **Key concepts**: Lists of dictionaries, frequency counters (`dept_counts[dept] = dept_counts.get(dept, 0) + 1`), `int()` parsing, `.isdigit()` validation.
 
-### **Task 8: Employee Record Search & Filter Engine** (`task8_search.py`)
+### **Task 8: Employee Record Search & Filter Engine** ([`task8_search.py`](tasks/task8_search.py))
 - **Category**: CLI Query Engine, Case-Insensitive Matching
 - **What it does**: Searches employees by name (partial match), filters by department, and filters by minimum salary.
 - **Key concepts**: String methods (`.lower()`, `in`), list comprehensions, `sys.argv` routing, `.isdigit()` validation.
 
-### **Task 9: Employee Record Updater & Deletion Tool** (`task9_manager.py`)
+### **Task 9: Employee Record Updater & Deletion Tool** ([`task9_manager.py`](tasks/task9_manager.py))
 - **Category**: Record Mutation, Data Integrity
 - **What it does**: Updates employee salaries by ID and deletes employees by ID. Both operations persist to `employees.json`.
 - **Key concepts**: Dictionary mutation, list filtering for deletion, `rowcount`-style verification, `isdigit()` validation.
 
-### **Task 10: CSV ↔ JSON Data Converter** (`task9_converter.py`)
+### **Task 10: CSV ↔ JSON Data Converter** ([`task9_converter.py`](tasks/task9_converter.py))
 - **Category**: Data Interoperability, Format Conversion
 - **What it does**: Exports JSON data to CSV format and imports CSV data back into JSON with auto-incremented IDs and salary type validation.
 - **Key concepts**: `csv.DictReader`, `csv.DictWriter`, `int()` casting, `try...except ValueError`.
 
-### **Task 11: Automated JSON Backup & Retention Tool** (`task11_backup.py`)
+### **Task 11: Automated JSON Backup & Retention Tool** ([`task11_backup.py`](tasks/task11_backup.py))
 - **Category**: DevOps, Automation, File Management
 - **What it does**: Creates timestamped backups of `employees.json`, lists all backups with sizes, and cleans up old backups based on a retention policy.
 - **Key concepts**: `shutil.copy()`, `datetime.now().strftime()`, `pathlib.Path`, file sorting by modification time, `file.unlink()`.
 
-### **Task 12: SQLite Relational Database Migration** (`task12_sqlite.py`)
+### **Task 12: SQLite Relational Database Migration** ([`task12_sqlite.py`](tasks/task12_sqlite.py))
 - **Category**: Relational Databases, SQL, Parameterized Queries
 - **What it does**: Migrates flat JSON storage to SQLite relational database. Supports Add, List, and Search-by-Department commands with full SQL integration.
 - **Key concepts**: `sqlite3` module, `CREATE TABLE IF NOT EXISTS`, parameterized `INSERT`/`SELECT`/`WHERE`, `conn.commit()`, `cursor.rowcount`.
 
-### **Task 13: FastAPI REST API (Full CRUD + Filters)** (`task13_api.py`)
+### **Task 13: FastAPI REST API (Full CRUD + Filters)** ([`task13_api.py`](tasks/task13_api.py))
 - **Category**: Web Development, REST APIs, Dependency Injection
 - **What it does**: A complete REST API with root health check, dynamic multi-condition employee search, department lookup, and full Create/Read/Update/Delete operations with proper HTTP status codes.
 - **Key concepts**: `FastAPI`, `uvicorn`, `Depends(get_db)`, `@asynccontextmanager` lifespan handlers, `pydantic.BaseModel`, dynamic SQL query building, `HTTPException`, `sqlite3.Row`.
@@ -128,14 +128,14 @@ TASKS-PORTFOLIO/
 **CLI Tasks (Tasks 1–12):**
 ```bash
 cd tasks/
-python task3_greeter.py "Divya"
-python task4_analyser.py
-python task5_parser.py
-python task6_todo.py add "Buy groceries"
-python task7_employee.py add "Bob" "Marketing" 60000
-python task8_search.py search "teja"
-python task11_backup.py backup
-python task12_sqlite.py list
+[python task3_greeter.py "Divya"](tasks/task3_greeter.py)
+[python task4_analyser.py](tasks/task4_analyser.py)
+[python task5_parser.py](tasks/task5_parser.py)
+[python task6_todo.py add "Buy groceries"](tasks/task6_todo.py)
+[python task7_employee.py add "Bob" "Marketing" 60000](tasks/task7_employee.py)
+[python task8_search.py search "teja"](tasks/task8_search.py)
+[python task11_backup.py backup](tasks/task11_backup.py)
+[python task12_sqlite.py list](tasks/task12_sqlite.py)
 ```
 
 **Web API (Task 13):**
@@ -193,4 +193,4 @@ See `dev_diary.txt` for daily logs of what was learned and focus levels tracked 
 
 ---
 
-**Built with 💻 by Divya using Python, FastAPI, SQLite, and a lot of debugging.**
+**Built with 💻 by Palla Divya Teja using Python, FastAPI, SQLite, and a lot of debugging.**
