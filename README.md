@@ -1,6 +1,6 @@
 # 🚀 Python Software Engineering Portfolio
 
-**Divya | B.Sc. AI (Final Year) | Aditya Degree College**
+**Palla Divya Teja | B.Sc. AI (Final Year) | Aditya Degree College**
 *A collection of 15 hands-on Python projects built from scratch — covering file I/O, data persistence, web APIs, and database engineering.*
 
 ---
