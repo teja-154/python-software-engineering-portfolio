@@ -1,22 +1,20 @@
 # 🚀 Python Software Engineering Portfolio
 
 **Palla Divya Teja | B.Sc. AI (Final Year) | Aditya Degree College**
-*A collection of 15 hands-on Python projects built from scratch — covering file I/O, data persistence, web APIs, and database engineering.*
+*A hands-on learning journey: 13+ Python exercises focused on building fundamental logic and problem-solving skills — covering file I/O, data persistence, web APIs, and database engineering.*
 
 ---
 
 ## 📋 About This Portfolio
 
-This repository showcases a progressive journey from basic Python scripting to building production-grade REST APIs and relational database systems. Every project was built independently, with a focus on clean code, robust error handling, and real-world applicability.
+This repository showcases a progressive journey from basic Python scripting to mastering the core building blocks of backend development and data handling. Every project was built independently, with a focus on clean code, robust error handling, and real-world applicability.
 
-**Skills Demonstrated:**
-- 📁 File System Operations (`os`, `pathlib`, `shutil`)
-- 📄 JSON & CSV Data Interoperability
-- 🗄️ Relational Databases (`sqlite3`, parameterized SQL)
-- 🌐 REST API Development (`FastAPI`, `uvicorn`)
-- ⚙️ Automated Backup & Retention Policies
-- 🛡️ Defensive Programming & Error Handling
-- 🔒 Security (SQL Injection Prevention, Input Validation)
+### 📖 My Learning Focus
+Instead of just copying tutorials, I've used these tasks to struggle with real concepts:
+- **Data Persistence**: Moving from simple text files to structured JSON and eventually SQLite databases.
+- **Error Handling**: Learning how to stop a program from crashing when a user gives bad input or a file is missing.
+- **Web Basics**: Understanding how a browser talks to a server through FastAPI and HTTP methods.
+- **Asynchronous Logic**: Dealing with the confusion of `async/await` and database threading.
 
 ---
 
@@ -175,7 +173,7 @@ uvicorn task13_api:app --reload
 
 ## 🎯 Learning Roadmap & Next Steps
 
-This portfolio represents my dedicated, day-by-day effort to master software engineering from first principles. Having successfully built everything from core filesystem automation to a database-backed REST API, here is the technical roadmap I am actively working on next to prepare for upcoming campus placement drives:
+This repository tracks my daily progress as I learn Python and Backend basics. It documents the bugs I've faced, the logic I've built, and how I'm training myself to think like a developer. Having successfully built everything from core filesystem automation to a database-backed REST API, here is the technical roadmap I am actively working on next to prepare for upcoming campus placement drives:
 
 1. **Automated Testing (`pytest`)**: Designing unit tests for API endpoints to ensure no new commits introduce bugs.
 2. **Containerization (Docker)**: Packaging this FastAPI application into a Docker container to ensure seamless deployment anywhere.
